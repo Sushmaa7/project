@@ -1,0 +1,9 @@
+{{#if menuListExists}}
+{{#each foodList}}
+<div class='menu-items-container' id={{this.id}}>
+  <img src={{this.image}} alt="{{this.name}}" />
+  <p>{{this.name}}</p>
+  <p>{{this.price}}</p>
+</div>
+{{/each}}
+{{/if}}
